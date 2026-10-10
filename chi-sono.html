@@ -1,0 +1,197 @@
+<!doctype html>
+<!--
+  SITO DI ROCCO PULIZZI — pagina "Chi sono"
+  Versione del codice: v1.0.1 (2026-10-10) — frase chiave allineata (D60)
+
+  COME MODIFICARE UN TESTO
+  I testi si trovano tra i segni > e < (per esempio <p ...>Testo</p>).
+  Cambia solo le parole, senza toccare ciò che sta dentro i simboli < >.
+  I testi approvati sono in 03-CONTENUTI.md: ogni modifica va prima decisa lì.
+-->
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Chi sono — Rocco Pulizzi</title>
+  <meta name="description" content="Ingegnere neuroscienziato prestato al mondo dell’hotellerie: il percorso di Rocco Pulizzi tra Pisa, Anversa e San Vito Lo Capo, e il metodo che tiene insieme impresa, consulenza e formazione.">
+  <link rel="canonical" href="https://roccopulizzi.it/chi-sono.html">
+  <meta name="theme-color" content="#0D1A30">
+
+  <link rel="preload" href="fonts/spectral-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/menu.js" defer></script>
+</head>
+<body class="pagina">
+
+  <a class="salta" href="#contenuto">Vai al contenuto</a>
+
+  <!-- ===================== TESTATA (nome + menu) ===================== -->
+  <header class="testata">
+    <a class="testata__nome" href="./">Rocco Pulizzi</a>
+    <button class="testata__menu-pulsante" type="button" aria-expanded="false" aria-controls="menu-principale">
+      <span class="visually-hidden">Apri il menu</span>
+      <span class="testata__menu-icona" aria-hidden="true"></span>
+    </button>
+    <nav id="menu-principale" class="menu" aria-label="Menu principale">
+      <ul>
+        <li><a href="./#servizi">Servizi</a></li>
+        <li><a href="./#come-lavoro">Come lavoro</a></li>
+        <li><a href="chi-sono.html" aria-current="page">Chi sono</a></li>
+        <li><a class="menu__evidenza" href="./#contatti">Parliamone</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenuto" class="pagina__contenuto">
+
+    <!-- ===================== A. INTRODUZIONE ===================== -->
+    <section class="sezione sezione--prima" aria-labelledby="pagina-titolo">
+      <div class="sezione__interno intro-foto">
+        <div class="intro-foto__testo">
+        <h1 id="pagina-titolo" class="pagina__titolo">Chi sono</h1>
+        <p class="pagina__intro">Mi definisco un ingegnere neuroscienziato prestato al mondo dell’hotellerie. Siciliano, studente fuori sede a Pisa, poi ricercatore ad Anversa. Quindi la scelta di tornare a casa, a San Vito Lo Capo, per gestire l’azienda di famiglia di mia moglie: più che un cervello di rientro, un (quasi) cervello senza fissa dimora. Oggi sono imprenditore, consulente e formatore, e non saprei dire dove finisce un ruolo e comincia l’altro. A tenerli insieme è sempre lo stesso filo: il rigore del metodo scientifico e i numeri che mi guidano.</p>
+        </div>
+        <!-- Autoritratto in due specchi sfalsati (foto di Rocco, originale — D58) -->
+        <picture class="intro-foto__foto">
+          <source type="image/webp"
+                  srcset="img/specchi-520.webp 520w, img/specchi-780.webp 780w, img/specchi-1040.webp 1040w, img/specchi-1536.webp 1536w"
+                  sizes="(min-width: 1100px) 520px, 100vw">
+          <img src="img/specchi-780.jpg"
+               srcset="img/specchi-520.jpg 520w, img/specchi-780.jpg 780w, img/specchi-1040.jpg 1040w, img/specchi-1536.jpg 1536w"
+               sizes="(min-width: 1100px) 520px, 100vw"
+               width="1536" height="1600"
+               alt="Rocco Pulizzi riflesso in due specchi affiancati, che mostrano due metà sfalsate del suo volto.">
+        </picture>
+      </div>
+    </section>
+
+    <!-- ===================== B. IL PERCORSO (linea del tempo) ===================== -->
+    <section class="sezione" aria-labelledby="percorso-titolo">
+      <div class="sezione__interno">
+        <h2 id="percorso-titolo" class="sezione__etichetta">Il percorso</h2>
+        <ol class="tappe">
+          <li class="tappa">
+            <span class="tappa__anno">2008</span>
+            <span class="tappa__testo">Laurea in Ingegneria Biomedica, Università di Pisa</span>
+          </li>
+          <li class="tappa">
+            <span class="tappa__anno">2012</span>
+            <span class="tappa__testo">Laurea specialistica in Ingegneria Biomedica, Università di Pisa, con tesi alla Scuola Superiore Sant’Anna</span>
+          </li>
+          <li class="tappa">
+            <span class="tappa__anno">2012–2016</span>
+            <span class="tappa__testo">Dottorato in neuroscienze all’Università di Anversa (Belgio), con borsa europea Marie Curie<br><a class="link tappa__link" href="percorso-scientifico.html">Scopri il percorso scientifico</a></span>
+          </li>
+          <li class="tappa">
+            <span class="tappa__anno">dal 2017</span>
+            <span class="tappa__testo">Manager di Seasanvito, San Vito Lo Capo</span>
+          </li>
+          <li class="tappa">
+            <span class="tappa__anno">2019</span>
+            <span class="tappa__testo">Docente nei corsi di formazione per il personale delle imprese turistiche del territorio</span>
+          </li>
+          <li class="tappa">
+            <span class="tappa__anno">dal 2025</span>
+            <span class="tappa__testo">Consulente per lo sviluppo aziendale</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== C. IL MIO MODO DI LAVORARE ===================== -->
+    <section class="sezione" aria-labelledby="modo-titolo">
+      <div class="sezione__interno">
+        <h2 id="modo-titolo" class="sezione__etichetta">Il mio modo di lavorare</h2>
+        <dl class="qualita">
+          <div class="qualita__voce">
+            <dt>Rigore da ricercatore</dt>
+            <dd>Metodo, ordine e tracciabilità: basi documentali strutturate, processi per fasi, verifica prima della consegna.</dd>
+          </div>
+          <div class="qualita__voce">
+            <dt>Traduzione tra mondi</dt>
+            <dd>Navigo tra documenti e definizioni complessi e specialistici, e li rendo accessibili a chi deve decidere, lavorare o imparare.</dd>
+          </div>
+          <div class="qualita__voce">
+            <dt>Precisione delle affermazioni</dt>
+            <dd>Distinguo ciò che è documentato da ciò che è supposto: è la base della credibilità.</dd>
+          </div>
+          <div class="qualita__voce">
+            <dt>Problem solving</dt>
+            <dd>Cerco la risposta migliore a situazioni critiche e spesso nuove, anche all’interno di team complessi.</dd>
+          </div>
+          <div class="qualita__voce">
+            <dt>Visione coerente</dt>
+            <dd>Impresa, consulenza e impegno civico orientati alla sostenibilità ambientale e sociale.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== D. IMPEGNO CIVICO ===================== -->
+    <section class="sezione" aria-labelledby="civico-titolo">
+      <div class="sezione__interno">
+        <h2 id="civico-titolo" class="sezione__etichetta">Impegno civico</h2>
+        <p class="pagina__paragrafo">Far crescere le attività senza consumare i luoghi e le persone che le rendono possibili vale anche fuori dall’azienda. Per questo sono attivo nell’associazionismo del mio territorio: come attivista di Legambiente mi occupo di tutela ambientale e di dialogo con le amministrazioni locali, e partecipo alla vita sociale e politica della mia comunità.</p>
+      </div>
+    </section>
+
+    <!-- ===================== E. OLTRE IL LAVORO ===================== -->
+    <section class="sezione oltre" aria-labelledby="oltre-titolo">
+      <div class="sezione__interno oltre__interno">
+        <div class="oltre__testo">
+          <h2 id="oltre-titolo" class="sezione__etichetta">Oltre il lavoro</h2>
+          <p class="pagina__paragrafo">Fuori dal lavoro mi trovi in mountain bike o a piedi lungo i sentieri, con la macchina fotografica in mano oppure ai fornelli. E sempre con un libro in lettura.</p>
+        </div>
+        <!-- Foto con gli occhiali da sole (ritagliata: senza targa né altre persone — D43, D52) -->
+        <picture class="oltre__foto">
+          <source type="image/webp"
+                  srcset="img/occhiali-480.webp 480w, img/occhiali-720.webp 720w, img/occhiali-960.webp 960w, img/occhiali-1300.webp 1300w"
+                  sizes="(min-width: 1100px) 520px, 100vw">
+          <img src="img/occhiali-720.jpg"
+               srcset="img/occhiali-480.jpg 480w, img/occhiali-720.jpg 720w, img/occhiali-960.jpg 960w, img/occhiali-1300.jpg 1300w"
+               sizes="(min-width: 1100px) 520px, 100vw"
+               width="1318" height="1057"
+               loading="lazy"
+               alt="Rocco Pulizzi all’aperto, sorridente, con occhiali da sole e zaino.">
+        </picture>
+      </div>
+    </section>
+
+    <!-- ===================== F. CHIUSURA ===================== -->
+    <section class="sezione" aria-label="Chiusura">
+      <div class="sezione__interno">
+        <div class="chiusura chiusura--pagina">
+          <p class="chiusura__frase">Se pensi che questo modo di lavorare possa servire alla tua azienda, parliamone.</p>
+          <div class="apertura__azioni">
+            <a class="pulsante" href="./#contatti">Parliamone</a>
+          </div>
+          <p class="apertura__nota">Il primo colloquio conoscitivo è gratuito.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER (tutte le pagine) ===================== -->
+  <footer class="footer">
+    <div class="sezione__interno footer__interno">
+      <nav class="footer__menu" aria-label="Pagine del sito">
+        <ul>
+          <li><a href="chi-sono.html" aria-current="page">Chi sono</a></li>
+          <li><a href="percorso-scientifico.html">Percorso scientifico</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+      <p class="footer__dati">
+        <span>P.IVA IT02947340812</span>
+        <span>PEC: <a href="mailto:roccopulizzi@pec.it">roccopulizzi@pec.it</a></span>
+        <span>© Rocco Pulizzi</span>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
