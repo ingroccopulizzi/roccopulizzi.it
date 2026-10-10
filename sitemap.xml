@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mappa del sito per i motori di ricerca. Aggiungere una riga per ogni nuova pagina. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://roccopulizzi.it/</loc></url>
+  <url><loc>https://roccopulizzi.it/chi-sono.html</loc></url>
+  <url><loc>https://roccopulizzi.it/percorso-scientifico.html</loc></url>
+</urlset>

@@ -1,0 +1,5 @@
+# Sito di Rocco Pulizzi — indicazioni per i motori di ricerca
+User-agent: *
+Allow: /
+Disallow: /privacy.html
+Sitemap: https://roccopulizzi.it/sitemap.xml

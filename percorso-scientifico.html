@@ -1,0 +1,158 @@
+<!doctype html>
+<!--
+  SITO DI ROCCO PULIZZI — pagina "Percorso scientifico"
+  Versione del codice: v0.9.1 (2026-10-10) — aggiunta l'illustrazione del neurone
+
+  COME MODIFICARE UN TESTO
+  I testi si trovano tra i segni > e < (per esempio <p ...>Testo</p>).
+  Cambia solo le parole, senza toccare ciò che sta dentro i simboli < >.
+  I testi approvati sono in 03-CONTENUTI.md: ogni modifica va prima decisa lì.
+-->
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Il percorso scientifico — Rocco Pulizzi</title>
+  <meta name="description" content="Prima dell’impresa c’è stata la ricerca: ingegneria biomedica a Pisa, dottorato in neuroscienze ad Anversa, pubblicazioni e conferenze internazionali.">
+  <link rel="canonical" href="https://roccopulizzi.it/percorso-scientifico.html">
+  <meta name="theme-color" content="#0D1A30">
+
+  <link rel="preload" href="fonts/spectral-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/menu.js" defer></script>
+</head>
+<body class="pagina">
+
+  <a class="salta" href="#contenuto">Vai al contenuto</a>
+
+  <!-- ===================== TESTATA (nome + menu) ===================== -->
+  <header class="testata">
+    <a class="testata__nome" href="./">Rocco Pulizzi</a>
+    <button class="testata__menu-pulsante" type="button" aria-expanded="false" aria-controls="menu-principale">
+      <span class="visually-hidden">Apri il menu</span>
+      <span class="testata__menu-icona" aria-hidden="true"></span>
+    </button>
+    <nav id="menu-principale" class="menu" aria-label="Menu principale">
+      <ul>
+        <li><a href="./#servizi">Servizi</a></li>
+        <li><a href="./#come-lavoro">Come lavoro</a></li>
+        <li><a href="chi-sono.html">Chi sono</a></li>
+        <li><a class="menu__evidenza" href="./#contatti">Parliamone</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenuto" class="pagina__contenuto">
+
+    <!-- ===================== A. INTRODUZIONE ===================== -->
+    <section class="sezione sezione--prima" aria-labelledby="pagina-titolo">
+      <div class="sezione__interno intro-neurone">
+        <div class="intro-neurone__testo">
+        <h1 id="pagina-titolo" class="pagina__titolo">Il percorso scientifico</h1>
+        <p class="pagina__intro">Prima dell’impresa c’è stata la ricerca. Tra Pisa e Anversa ho studiato il movimento umano e le reti di neuroni, e ho imparato un modo di lavorare che non ho più lasciato: domande precise, esperimenti rigorosi, risultati verificabili. Poi ho scelto un’altra strada, ma il mondo scientifico resta una parte di me, e sono orgoglioso del contributo che ho potuto dargli.</p>
+        </div>
+        <!-- Illustrazione stilizzata di un neurone (disegno vettoriale, non una foto): file img/neurone.svg -->
+        <img class="intro-neurone__figura" src="img/neurone.svg" width="420" height="1200" alt="Illustrazione stilizzata di un neurone: il corpo cellulare al centro, i dendriti che si ramificano verso l’alto e ai lati, l’assone verso il basso.">
+      </div>
+    </section>
+
+    <!-- ===================== B. FORMAZIONE E RICERCA ===================== -->
+    <section class="sezione" aria-labelledby="formazione-titolo">
+      <div class="sezione__interno">
+        <h2 id="formazione-titolo" class="sezione__etichetta">Formazione e ricerca</h2>
+        <dl class="qualita">
+          <div class="qualita__voce">
+            <dt>Dottorato di ricerca (2012–2016)</dt>
+            <dd>PhD in Biomedical Science – Neuroscience, University of Antwerp (Belgio), laboratorio di Theoretical Neurobiology and Neuroengineering del Prof. Michele Giugliano. Tesi: <em>Network electrophysiology: exploring emerging properties in (dys)functional neuronal circuits in vitro</em>. Studio delle dinamiche di reti neuronali in coltura con matrici di microelettrodi, controllo “closed-loop” e optogenetica. Borsa europea Marie Curie (NAMASEN, Initial Training Network del 7° Programma Quadro); partecipazione a tre progetti di ricerca finanziati dall’Unione Europea.</dd>
+          </div>
+          <div class="qualita__voce">
+            <dt>Laurea specialistica in Ingegneria Biomedica (2012)</dt>
+            <dd>Università di Pisa, 110/110. Tesi all’Istituto di Biorobotica della Scuola Superiore Sant’Anna: <em>Analisi di algoritmi di fattorizzazione per l’estrazione di sinergie muscolari</em>.</dd>
+          </div>
+          <div class="qualita__voce">
+            <dt>Laurea triennale in Ingegneria Biomedica (2008)</dt>
+            <dd>Università di Pisa. Tesi al Dipartimento di Ingegneria Chimica sul rilascio controllato di farmaci da microsfere polisaccaridiche.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== C. PUBBLICAZIONI ===================== -->
+    <!-- Ogni DOI è un link semplice a doi.org, senza tracciamento (D46) -->
+    <section class="sezione" aria-labelledby="pubblicazioni-titolo">
+      <div class="sezione__interno">
+        <h2 id="pubblicazioni-titolo" class="sezione__etichetta">Pubblicazioni</h2>
+
+        <h3 class="pubblicazioni__gruppo">Articoli su riviste internazionali peer-reviewed</h3>
+        <ul class="pubblicazioni">
+          <li>Pulizzi R., Musumeci G., Van den Haute C., Van De Vijver S., Baekelandt V., Giugliano M. (2016). <em>Brief wide-field photostimuli evoke and modulate oscillatory reverberating activity in cortical networks.</em> <strong>Scientific Reports</strong>, 6. <a href="https://doi.org/10.1038/srep24701" rel="noopener">doi:10.1038/srep24701</a></li>
+          <li>Segura I., Lange C., Knevels E., Moskalyuk A., Pulizzi R., et al. (2016). <em>The Oxygen Sensor PHD2 Controls Dendritic Spines and Synapses via Modification of Filamin A.</em> <strong>Cell Reports</strong>, 14(11), 2653–2667. <a href="https://doi.org/10.1016/j.celrep.2016.02.047" rel="noopener">doi:10.1016/j.celrep.2016.02.047</a></li>
+          <li>Peelaerts W., Bousset L., Van der Perren A., Moskalyuk A., Pulizzi R., et al. (2015). <em>α-Synuclein strains cause distinct synucleinopathies after local and systemic administration.</em> <strong>Nature</strong>, 522(7556), 340–344. <a href="https://doi.org/10.1038/nature14547" rel="noopener">doi:10.1038/nature14547</a></li>
+          <li>Mahmud M., Pulizzi R., Vasilaki E., Giugliano M. (2014). <em>QSpike tools: a generic framework for parallel batch preprocessing of extracellular neuronal signals recorded by substrate microelectrode arrays.</em> <strong>Frontiers in Neuroinformatics</strong>, 8, 1–14. <a href="https://doi.org/10.3389/fninf.2014.00026" rel="noopener">doi:10.3389/fninf.2014.00026</a></li>
+          <li>Barbani N., Cristallini C., Pulizzi R., et al. (2009). <em>Preparation and functional characterization of a polysaccharidic matrix microsphere-shaped for controlled drug release.</em> <strong>Journal of Applied Biomaterials &amp; Biomechanics</strong>, 7(1), 54.</li>
+        </ul>
+
+        <h3 class="pubblicazioni__gruppo">Capitolo di libro</h3>
+        <ul class="pubblicazioni">
+          <li>Couto J., Linaro D., Pulizzi R., Giugliano M. (2016). <em>Closed-Loop Methodologies for Cellular Electrophysiology.</em> In: <strong>Closed Loop Neuroscience</strong>, Elsevier. <a href="https://doi.org/10.1016/B978-0-12-802452-2.00013-5" rel="noopener">doi:10.1016/B978-0-12-802452-2.00013-5</a></li>
+        </ul>
+
+        <h3 class="pubblicazioni__gruppo">Atti di conferenze peer-reviewed</h3>
+        <ul class="pubblicazioni">
+          <li>9th MEA Meeting, Reutlingen (2014) — due contributi.</li>
+          <li>International Conference on Electrical Engineering and Information &amp; Communication Technology (ICEEICT 2014), IEEE.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== D. CONFERENZE E SCUOLE ===================== -->
+    <section class="sezione" aria-labelledby="conferenze-titolo">
+      <div class="sezione__interno">
+        <h2 id="conferenze-titolo" class="sezione__etichetta">Conferenze e scuole internazionali</h2>
+        <p class="pagina__paragrafo">Presentazioni, tra le altre, alla Royal Society di Londra, al FENS Forum of Neuroscience (Milano), al MEA Meeting (Reutlingen), ai meeting WiBrain (Bruxelles, Liegi) e al workshop finale NAMASEN (Danzica). Scuole e corsi internazionali a Trieste, Padova, Göttingen, Sheffield e Anversa.</p>
+      </div>
+    </section>
+
+    <!-- ===================== E. UN RICORDO ===================== -->
+    <section class="sezione" aria-labelledby="ricordo-titolo">
+      <div class="sezione__interno">
+        <h2 id="ricordo-titolo" class="sezione__etichetta">Un ricordo</h2>
+        <p class="pagina__paragrafo">Tra i ricordi più belli di quegli anni c’è anche una conversazione con Edvard Moser, Premio Nobel per la Fisiologia o la Medicina 2014: un piccolo privilegio che racconta bene quanto fosse stimolante quell’ambiente.</p>
+      </div>
+    </section>
+
+    <!-- ===================== F. CHIUSURA ===================== -->
+    <section class="sezione" aria-label="Chiusura">
+      <div class="sezione__interno">
+        <nav class="chiusura-link" aria-label="Prosegui">
+          <a class="link" href="chi-sono.html">← Torna a Chi sono</a>
+          <a class="pulsante" href="./#contatti">Parliamone</a>
+        </nav>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER (tutte le pagine) ===================== -->
+  <footer class="footer">
+    <div class="sezione__interno footer__interno">
+      <nav class="footer__menu" aria-label="Pagine del sito">
+        <ul>
+          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="percorso-scientifico.html" aria-current="page">Percorso scientifico</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+      <p class="footer__dati">
+        <span>P.IVA IT02947340812</span>
+        <span>PEC: <a href="mailto:roccopulizzi@pec.it">roccopulizzi@pec.it</a></span>
+        <span>© Rocco Pulizzi</span>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
