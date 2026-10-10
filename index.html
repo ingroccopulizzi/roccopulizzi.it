@@ -1,0 +1,282 @@
+<!doctype html>
+<!--
+  SITO DI ROCCO PULIZZI — pagina principale (home)
+  Versione del codice: v1.0.1 (2026-10-10) — titolo e sottotitolo dell’Apertura rivisti
+
+  COME MODIFICARE UN TESTO
+  I testi si trovano tra i segni > e < (per esempio <h1 ...>Testo</h1>).
+  Cambia solo le parole, senza toccare ciò che sta dentro i simboli < >.
+  I testi approvati sono in 03-CONTENUTI.md: ogni modifica va prima decisa lì.
+-->
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Titolo e descrizione mostrati da Google e nella scheda del browser -->
+  <title>Rocco Pulizzi — Consulenza e formazione per imprese ricettive e del territorio</title>
+  <meta name="description" content="Consulenza e formazione per imprese ricettive e realtà del territorio: un metodo di lavoro solido, dalla vendita all’organizzazione fino ai numeri, con il rigore di chi proviene dalla ricerca.">
+  <link rel="canonical" href="https://roccopulizzi.it/">
+  <meta name="theme-color" content="#0D1A30">
+
+  <!-- I caratteri tipografici sono dentro il sito (nessun collegamento esterno): li carichiamo in anticipo -->
+  <link rel="preload" href="fonts/spectral-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Foglio di stile: colori, caratteri e impaginazione -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Piccolo script per il menu su telefono (nessun tracciamento, nessun cookie) -->
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/menu.js" defer></script>
+</head>
+<body>
+
+  <!-- Collegamento nascosto, visibile solo con la tastiera: porta subito al contenuto -->
+  <a class="salta" href="#contenuto">Vai al contenuto</a>
+
+  <!-- ===================== TESTATA (nome + menu) ===================== -->
+  <header class="testata">
+    <a class="testata__nome" href="./">Rocco Pulizzi</a>
+
+    <!-- Pulsante del menu: compare solo su telefono -->
+    <button class="testata__menu-pulsante" type="button" aria-expanded="false" aria-controls="menu-principale">
+      <span class="visually-hidden">Apri il menu</span>
+      <span class="testata__menu-icona" aria-hidden="true"></span>
+    </button>
+
+    <nav id="menu-principale" class="menu" aria-label="Menu principale">
+      <ul>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#come-lavoro">Come lavoro</a></li>
+        <li><a href="#chi-sono">Chi sono</a></li>
+        <li><a class="menu__evidenza" href="#contatti">Parliamone</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenuto">
+
+    <!-- ===================== 1. APERTURA ===================== -->
+    <section class="apertura" aria-labelledby="apertura-titolo">
+
+      <div class="apertura__testo">
+        <h1 id="apertura-titolo">Far crescere un’impresa senza consumare i luoghi e le persone che la rendono possibile.</h1>
+
+        <p class="apertura__sottotitolo">Consulenza e formazione per imprese ricettive e realtà del territorio: un metodo di lavoro solido, dalla vendita all’organizzazione fino ai numeri, con il rigore di chi proviene dalla ricerca.</p>
+
+        <div class="apertura__azioni">
+          <a class="pulsante" href="#contatti">Parliamone</a>
+          <a class="link" href="#servizi">Scopri i servizi</a>
+        </div>
+
+        <p class="apertura__nota">Il primo colloquio conoscitivo è gratuito.</p>
+      </div>
+
+      <!-- Firma (due righe, senza puntini — decisione D55) -->
+      <p class="firma">
+        <span class="firma__nome">Rocco Pulizzi</span>
+        <span class="firma__ruoli">Imprenditore, consulente, formatore</span>
+      </p>
+
+      <!-- Foto: il golfo al crepuscolo (foto di Rocco, ripulita dai metadati).
+           Il browser sceglie da solo la dimensione più adatta allo schermo. -->
+      <picture class="apertura__foto">
+        <source type="image/webp"
+                srcset="img/crepuscolo-800.webp 800w, img/crepuscolo-1280.webp 1280w, img/crepuscolo-1920.webp 1920w, img/crepuscolo-2400.webp 2400w"
+                sizes="100vw">
+        <img src="img/crepuscolo-1280.jpg"
+             srcset="img/crepuscolo-800.jpg 800w, img/crepuscolo-1280.jpg 1280w, img/crepuscolo-1920.jpg 1920w, img/crepuscolo-2400.jpg 2400w"
+             sizes="100vw"
+             width="2400" height="1781"
+             alt="Il golfo al crepuscolo, con il profilo del monte sull’orizzonte.">
+      </picture>
+
+      <!-- Velatura scura dietro il testo (solo su schermi grandi): garantisce la leggibilità -->
+      <div class="apertura__velatura" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===================== 2. SERVIZI ===================== -->
+    <section id="servizi" class="sezione servizi" aria-labelledby="servizi-titolo">
+      <div class="sezione__interno">
+        <h2 id="servizi-titolo" class="sezione__etichetta">Servizi</h2>
+        <p class="sezione__intro">Tre modi di lavorare insieme, un unico metodo.</p>
+
+        <!-- Tre voci affiancate su schermi grandi, una sotto l'altra su telefono -->
+        <ul class="servizi__elenco">
+          <li class="servizi__voce">
+            <h3>Consulenza per lo sviluppo aziendale</h3>
+            <p>Guardiamo insieme come vendi, come è organizzato il lavoro e cosa raccontano i tuoi numeri. Poi costruiamo processi chiari, dalla vendita all’organizzazione interna, che il tuo team può portare avanti nel tempo. L’obiettivo è una crescita sostenibile: economica, sociale e ambientale.</p>
+          </li>
+          <li class="servizi__voce">
+            <h3>Formazione per i team</h3>
+            <p>Percorsi pratici per le persone che lavorano con te: vendita e rapporto con il cliente, reputazione online, strumenti digitali e intelligenza artificiale. Rendo semplici concetti complessi, perché ciò che si impara in aula si applichi già il giorno dopo.</p>
+          </li>
+          <li class="servizi__voce">
+            <h3>Analisi dati</h3>
+            <p>Ricavi, costi, prenotazioni, canali di vendita: trasformo i dati che già possiedi in pochi indicatori leggibili. Così le decisioni non si basano più su sensazioni, ma su una fotografia chiara di dove sei e di dove stai andando.</p>
+          </li>
+        </ul>
+        <!-- Nessun pulsante in questa sezione (decisione D38) -->
+      </div>
+    </section>
+
+    <!-- ===================== 3. COME LAVORO ===================== -->
+    <section id="come-lavoro" class="sezione come-lavoro" aria-labelledby="come-lavoro-titolo">
+      <div class="sezione__interno">
+        <h2 id="come-lavoro-titolo" class="sezione__etichetta">Come lavoro</h2>
+        <p class="sezione__intro">Un percorso per fasi, con le tue persone coinvolte dall’inizio alla fine.</p>
+
+        <!-- Le quattro fasi: sono una sequenza, quindi hanno un numero -->
+        <ol class="fasi">
+          <li class="fase">
+            <span class="fase__numero" aria-hidden="true">1</span>
+            <h3>Ascolto e analisi</h3>
+            <p>Partiamo dalla situazione reale: come vendi, come lavora il tuo team, quali dati hai già a disposizione.</p>
+          </li>
+          <li class="fase">
+            <span class="fase__numero" aria-hidden="true">2</span>
+            <h3>Mercato e obiettivi</h3>
+            <p>Studiamo il tuo mercato e i tuoi clienti, per allineare ogni scelta a una visione di sviluppo chiara.</p>
+          </li>
+          <li class="fase">
+            <span class="fase__numero" aria-hidden="true">3</span>
+            <h3>Processi e strumenti</h3>
+            <p>Definiamo i processi di vendita e impostiamo strumenti semplici per raccogliere dati e automatizzare ciò che si ripete.</p>
+          </li>
+          <li class="fase">
+            <span class="fase__numero" aria-hidden="true">4</span>
+            <h3>Misura e miglioramento</h3>
+            <p>Verifichiamo i risultati sui numeri, affiniamo i processi e miglioriamo i ricavi nel tempo.</p>
+          </li>
+        </ol>
+
+        <!-- Due blocchi trasversali: valgono per tutto il percorso -->
+        <div class="trasversali">
+          <div class="trasversale">
+            <h3>In ogni fase</h3>
+            <p>Formazione e affiancamento delle persone, con un confronto costante e documentato. L’obiettivo è che il metodo resti alla tua azienda.</p>
+          </div>
+          <div class="trasversale">
+            <h3>Una rete di persone</h3>
+            <p>Dietro il metodo ci sono anche le relazioni: collaborazioni costruite in vent’anni tra ricerca e impresa. Il dialogo tra competenze diverse è una risorsa che metto a disposizione della tua azienda.</p>
+          </div>
+        </div>
+
+        <!-- Chiusura e invito -->
+        <div class="chiusura">
+          <p class="chiusura__frase">Nessuna formula magica: certezze operative, costruite passo dopo passo.</p>
+          <div class="apertura__azioni">
+            <a class="pulsante" href="#contatti">Parliamone</a>
+          </div>
+          <p class="apertura__nota">Il primo colloquio conoscitivo è gratuito.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. IL METODO, MESSO ALLA PROVA ===================== -->
+    <section id="metodo" class="sezione metodo" aria-labelledby="metodo-titolo">
+      <div class="sezione__interno">
+        <h2 id="metodo-titolo" class="sezione__etichetta">Il metodo, messo alla prova</h2>
+
+        <!-- Citazione in evidenza: il mantra (decisione D30) -->
+        <blockquote class="mantra">
+          <p>«Finché non hai detto un numero, sei nel campo delle opinioni.»</p>
+        </blockquote>
+
+        <!-- Due paragrafi affiancati su schermi grandi -->
+        <div class="metodo__colonne">
+          <div class="metodo__blocco">
+            <h3>Il metodo</h3>
+            <p>Vengo dalla ricerca scientifica: ingegneria biomedica, poi un dottorato in neuroscienze. Da quel mondo ho portato con me un’abitudine che applico a ogni decisione d’impresa: osservare, misurare, verificare prima di agire. E rendere semplice ciò che è complesso, perché un metodo funziona solo se tutti lo capiscono.</p>
+          </div>
+          <div class="metodo__blocco">
+            <h3>Seasanvito, il laboratorio</h3>
+            <p>Il primo banco di prova è Seasanvito, l’azienda turistico-ricettiva che guido come manager a San Vito Lo Capo. Lì il metodo è diventato scelte concrete: un apart-hotel per famiglie, un eco-hotel riservato agli adulti, scelta ancora rara sul territorio, case vacanza e suite, la sostenibilità ambientale, sociale e nel lavoro, la digitalizzazione dei processi e, oggi, l’intelligenza artificiale.</p>
+          </div>
+        </div>
+        <!-- Nessun pulsante e nessuna cifra in questa sezione (D32, D38) -->
+      </div>
+    </section>
+
+    <!-- (5. Testimonianze: sezione prevista ma non pubblicata finché non ci sono
+         testimonianze reali con consenso scritto — decisione D37) -->
+
+    <!-- ===================== 6. CHI SONO (anteprima) ===================== -->
+    <section id="chi-sono" class="sezione chi-sono" aria-labelledby="chi-sono-titolo">
+      <div class="sezione__interno chi-sono__interno">
+
+        <!-- Foto in fiera (foto di Rocco, ripulita dai metadati — D43, D52) -->
+        <picture class="chi-sono__foto">
+          <source type="image/webp"
+                  srcset="img/fiera-520.webp 520w, img/fiera-780.webp 780w, img/fiera-1040.webp 1040w, img/fiera-1300.webp 1300w"
+                  sizes="(min-width: 1100px) 480px, 100vw">
+          <img src="img/fiera-780.jpg"
+               srcset="img/fiera-520.jpg 520w, img/fiera-780.jpg 780w, img/fiera-1040.jpg 1040w, img/fiera-1300.jpg 1300w"
+               sizes="(min-width: 1100px) 480px, 100vw"
+               width="1300" height="1950"
+               loading="lazy"
+               alt="Rocco Pulizzi in fiera, al tavolo con un taccuino aperto.">
+        </picture>
+
+        <div class="chi-sono__testo">
+          <h2 id="chi-sono-titolo" class="sezione__etichetta">Chi sono</h2>
+          <p class="chi-sono__paragrafo">Siciliano, studente fuori sede a Pisa, poi ricercatore ad Anversa. Quindi la scelta di tornare a casa, a San Vito Lo Capo, per gestire l’azienda di famiglia di mia moglie. Un percorso non lineare, tenuto insieme da un filo: il metodo.</p>
+          <!-- La pagina "chi-sono.html" verrà costruita dopo la home -->
+          <a class="link chi-sono__link" href="chi-sono.html">Scopri il mio percorso →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== 7. CONTATTI ===================== -->
+    <section id="contatti" class="sezione contatti" aria-labelledby="contatti-titolo">
+      <div class="sezione__interno">
+        <h2 id="contatti-titolo" class="sezione__etichetta">Contatti</h2>
+        <div class="contatti__testo-blocco">
+          <p class="sezione__intro">Parliamone</p>
+          <p class="contatti__testo">Raccontami la tua azienda e che cosa vorresti migliorare. Il primo colloquio conoscitivo è gratuito e senza impegno: serve a capire insieme se, e come, posso esserti utile.</p>
+          <p class="contatti__riga">San Vito Lo Capo (TP) · Lavoro in presenza e da remoto.</p>
+        </div>
+
+        <!-- Recapiti: link diretti, nessun modulo (decisione D8). La PEC è solo nel footer. -->
+        <ul class="recapiti">
+          <li class="recapito">
+            <span class="recapito__etichetta">Email</span>
+            <a class="recapito__link" href="mailto:info@roccopulizzi.it">info@roccopulizzi.it</a>
+          </li>
+          <li class="recapito">
+            <span class="recapito__etichetta">Telefono</span>
+            <a class="recapito__link" href="tel:+393286504110">+39 328 650 4110</a>
+          </li>
+          <li class="recapito">
+            <span class="recapito__etichetta">WhatsApp</span>
+            <a class="recapito__link" href="https://wa.me/393286504110">+39 328 650 4110</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER (tutte le pagine) ===================== -->
+  <footer class="footer">
+    <div class="sezione__interno footer__interno">
+      <nav class="footer__menu" aria-label="Pagine del sito">
+        <ul>
+          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="percorso-scientifico.html">Percorso scientifico</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+      <!-- Dati obbligatori: partita IVA (art. 35 DPR 633/72) e PEC. Nessuna sede (decisione D45). -->
+      <p class="footer__dati">
+        <span>P.IVA IT02947340812</span>
+        <span>PEC: <a href="mailto:roccopulizzi@pec.it">roccopulizzi@pec.it</a></span>
+        <span>© Rocco Pulizzi</span>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
