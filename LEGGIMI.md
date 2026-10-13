@@ -17,6 +17,7 @@
 | `.nojekyll` | File vuoto: dice a GitHub di pubblicare i file così come sono. Non cancellare. |
 | `robots.txt`, `sitemap.xml` | Indicazioni per i motori di ricerca (la privacy è esclusa dall'indice). |
 | `404.html` | Pagina mostrata per gli indirizzi inesistenti. |
+| `favicon.svg`, `favicon.ico`, `apple-touch-icon.png` | Icona del sito (monogramma RP, come nella firma email): nella scheda del browser e sulla schermata di iPhone/iPad. Collegate in testa a ogni pagina. Non spostare né rinominare. |
 | `img/` | Foto (crepuscolo, fiera, specchi, occhiali) in quattro dimensioni ciascuna, senza metadati (GPS ecc.); `neurone.svg` = disegno vettoriale del neurone (modificabile con un editor di testo o di grafica vettoriale). |
 
 ## Come cambiare un testo
